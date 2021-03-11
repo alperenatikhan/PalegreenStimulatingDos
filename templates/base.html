@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Vollkorn&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+   .card {
+     background-image: linear-gradient(#f6f4e6, #f4f6ff);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     border-radius: 5px 100px 100px 5px;
+     padding:30px;
+     margin:30px;
+     height:70%;
+   }
+
+h3{
+  font-family: 'Vollkorn', serif;
+  font-size:30px;
+  text-align:center;
+  margin-bottom:-10px;
+}
+
+h4{
+  font-family: 'Lato', sans-serif;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+hr{
+ size: 5px;
+ border-style: dashed;
+ width:60%;
+}
+.heading {
+  position: relative;
+  background-color: #f6f4e6;
+  width: 90%;
+  height: 20%;
+  border-radius: 50px;
+  margin-top: 10px;
+  padding: 30px;
+  margin:20px;
+  text-align: center;
+}
+
+
+h5 {
+  font-family: 'Vollkorn', serif;
+}
+
+form {
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+ </style>
+</head>
+<body>
+
+    <div class="heading">
+      <h3>Welcome to Academic Explorer</h3>
+      <form action="#" method="post">
+        <input type="text" name="keyword" placeholder="Please Enter Your Keyword" required>
+        <input type="submit" value="Search">
+      </form>
+    </div>
+
+{%block content%}
+
+{%endblock%}
+
+</body>
+</html>

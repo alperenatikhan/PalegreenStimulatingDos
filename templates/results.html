@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3> There are {{number_articles}} articles in database</h3>
+<hr>
+  {%for i in range (0, number_articles)%}
+   <div class="card">
+   <h3>{{rows[i]["field2"]}}</h3><br>
+   <h4>{{rows[i]["field3"]}}</h4><br>
+   <p>{{rows[i]["field4"]}}</p><br>
+   <a href={{rows[i]["field5"]}} target ="blank"> {{rows[i]["field5"]}}</a>
+   <h4>{{rows[i]["field6"]}}</h4>
+   
+
+  </div>
+
+  {%endfor%}
+
+
+
+{% endblock %}
